@@ -1,7 +1,8 @@
 extends layout
 
 block content
-  h1= title
+
+  h1= product_name
   
   ul
     - products_list.sort(function(a, b) {let textA = a.product_name.toUpperCase(); let textB = b.product_name.toUpperCase(); return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
