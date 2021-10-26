@@ -17,5 +17,4 @@ productSchema
   return '/product/'+this._id;
 });
 
-// Export model.
 module.exports = mongoose.model('Products', productSchema);
