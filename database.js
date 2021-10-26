@@ -1,14 +1,9 @@
 
 console.log('This script populates products to your database. Specified database as argument - e.g.: database mongodb+srv://preethi:mongo123$@cluster0.egueg.mongodb.net/test?retryWrites=true&w=majority');
 
-// Get arguments passed on command line
+
 var userArgs = process.argv.slice(2);
-/*
-if (!userArgs[0].startsWith('mongodb')) {
-    console.log('ERROR: You need to specify a valid mongodb URL as the first argument');
-    return
-}
-*/
+
 var async = require('async')
 var Products = require('./models/products') 
 
